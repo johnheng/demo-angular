@@ -1,0 +1,5 @@
+<ul class="my-new-list">
+    <li *ngFor="let comment of comments; let position = odd; let index = index">
+        <comment [comment]="comment" position="{{position}}"></comment>
+    </li>
+</ul>

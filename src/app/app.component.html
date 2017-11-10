@@ -1,20 +1,116 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<body>
+  <!-- <div class="loader">
+      <div class="fading-line"></div>
+  </div> -->
 
+  <!-- Navigation -->
+  <a style="display:none" id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+  <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+          <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+          <li>
+              <a href="#top">Home</a>
+          </li>
+      </ul>
+  </nav>
+
+  <!-- Header -->
+  <header id="top" class="header">
+      <div class="text-center" style="padding:0 20px;">
+
+          <div class="white-box col-lg-8 col-lg-offset-2 col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
+              <div>
+                  <div class="flair1 pull-left"></div>
+                  <div class="flair2 pull-right"></div>
+                  <h1>Congratulations, Carina Chu!</h1>
+              </div>
+              <h3>Chemistry, Bachelor of Science (B.S.), Class of 2017</h3>
+              <h3>VCU School of Pharmacy, Class of 2021</h3>
+          </div>
+      </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="about">
+      <div class="container">
+          <div class="row col-lg-8 col-lg-offset-2">
+              <div class="col-lg-12 text-center" style="margin-bottom:20px;">
+                  <h2>
+                      What has Carina done these past four years?
+                  </h2>
+              </div>
+              <div class="row">
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                      <img [src]="chemistry" alt="Test tubes and stuff" class="img-responsive">
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                      <p class="lead">
+                          Carina (as Khoi would put it) dominated chemistry to no end. You could always find her helping out her friends that were struggling with their work and she definitely knew her stuff, whether it was telling you the molecular weight of carbon or how to find the biosysnthesis of amino acids and porphyrins (I don't know what those are).
+                      </p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-6 col-lg-push-6 col-md-12 col-sm-12">
+                      <img [src]="globe" alt="Test tubes and stuff" class="img-responsive">
+                  </div>
+                  <div class="col-lg-6 col-lg-pull-6 col-md-12 col-sm-12">
+                      <p class="lead">
+                          It wasn't just chemistry she was good at. She became educated all around: math, sociology, humanities, speech, physics, economics--she even attended an Operating Systems lecture with John once. She was involved in multiple student organizations and even worked part-time as a drug dealer (i.e. pharmacy technician). The money she made as a pharm tech was used to pay for her food, rent, gas, and gifts she'd buy for other people, so she grew to understand the value of a dollar.
+                      </p>
+                  </div>
+                  
+              </div>
+              <div class="row">
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                      <img [src]="education" alt="Test tubes and stuff" class="img-responsive">
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                      <p class="lead">
+                          Lastly, <strong>she worked her ass off</strong>. She really grew up and started handling everything herself. In the four years she has been at VCU, she's been through a lot and has changed in ways she couldn't imagine. She's ready to go out there and do big things.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <!-- /.row -->
+          <div class="row">
+              <div class="col-lg-12 text-center" style="margin-bottom:25px;">
+                  <h2>
+                      Messages from her friends and supporters
+                  </h2>
+              </div>
+
+              <div class="col-lg-12">
+                  <div id="panel-1">
+                      <comments></comments>
+                  </div>
+              </div>
+
+              <div class="row">
+
+                  <div class="col-lg-6 col-lg-offset-3 text-center">
+                      <hr class="small">
+                      <a href="https://goo.gl/forms/WOfF4ETWmUqcOOn42" target="_blank">Wanna leave a message?</a>
+                      <a href="https://goo.gl/forms/WOfF4ETWmUqcOOn42" target="_blank"><img class="img-responsive" [src]="message" style="margin-top:10px;"/></a>
+                      <hr class="small">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- /.container -->
+  </section>
+
+  <!-- Footer -->
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-10 col-lg-offset-1 text-center">
+                  <h4><strong>Congratulations, Carina!</strong>
+                  </h4>
+                  <p>Richmond, VA</p>
+                  <hr class="small">
+                  <p class="text-muted">Copyright &copy; Hengouts 2017</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+</body>

@@ -1,18 +1,19 @@
+import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { Http, HttpModule } from '@angular/http';
 
-
-import { AppComponent } from './app.component';
-
+import { AppComponent }  from './app.component';
+import { CommentService } from './comment.service';
+import { CommentListComponent } from './comment-list.component';
+import { CommentComponent } from './comment.component';
+import { TimeAgoPipe } from 'time-ago-pipe';
 
 @NgModule({
-  declarations: [
-    AppComponent
+  imports:      [ BrowserModule, HttpModule ],
+  declarations: [ AppComponent, CommentComponent, CommentListComponent, TimeAgoPipe],
+  providers:    [ 
+    CommentService
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

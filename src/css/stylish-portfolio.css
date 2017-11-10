@@ -1,0 +1,366 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.white-box {
+    background-color: rgba(256, 256, 256, .4);
+    border-radius: 6px;
+    padding: 25px;
+
+    margin-top:25px;
+    margin-bottom:25px;
+}
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+.message.right {
+    margin-left: 0;
+    margin-right: 125px;
+}
+
+.message.left {
+    margin-left: 125px;
+    margin-right: 0px;
+}
+
+.message {
+    background: #F3F3F4;
+    border-radius: 10px;
+    color: #54555A;
+    padding: 10px 20px 20px 20px;
+    position: relative;
+    margin: 0 100px 70px 100px;
+}
+
+.user {
+    /* background-image: url(../img/profile-cat-06dbc7eef1e70fbab99b9f4397da4bf9.jpg); */
+    width: 100px;
+    display: block;
+    height: 100px;
+    background-size: cover;
+    border-radius: 100px;
+    position: absolute;
+}
+
+/* .user:nth-of-type(1n) {
+    background-image: url(/img/profile-robot-6e0fe619f5a6403e4561a283abaad2d2.jpg);
+}
+
+.user:nth-of-type(2n) {
+    background-image: url(/img/profile-yeti-1362e595fd49dcd42ac7bf77c75fd9d3.jpg);
+}
+
+.user:nth-of-type(3n) {
+    background-image: url(/img/profile-sun-16d0155059fd19acbc698cd68e71ac6e.jpg);
+}
+
+.user:nth-of-type(4n) {
+    background-image: url(/img/profile-sun-16d0155059fd19acbc698cd68e71ac6e.jpg);
+} */
+
+.user.right {
+    right: 15px;
+}
+
+.message.left:before {
+    border-left: 0;
+    margin-left: 0;
+        content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    border-bottom: 7.5px solid transparent;
+    border-right: 10px solid #F3F3F4;
+    border-top: 7.5px solid transparent;
+    left: -10px;
+    top: 20px;
+}
+
+.message.right:after {
+        content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    border-bottom: 7.5px solid transparent;
+    border-left: 10px solid #F3F3F4;
+    border-top: 7.5px solid transparent;
+    top: 20px;
+    margin-right: 10px;
+    left: 100%;
+}
+
+.flair1 {
+    -webkit-transform: rotate(345deg);
+    transform: rotate(345deg);
+        background-image: url(../img/illo-sm-hat-party3-0ff344759ce9aeaccf4fce5c171fb3e0.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    z-index: 10;
+}
+
+.flair2 {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+        background-image: url(../img/illo-sm-hat-party1-dae956bcc74949f3d2ad0a1ecb8a9354.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    z-index: 10;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background: url(../img/bg2.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
+
+.my-new-list {
+    list-style-type: none;
+    padding:0;
+}
+
+.list-group-item {
+    line-height:1;
+}
+
+.panel-collapse {
+    max-height:300px;
+    overflow:auto;
+}
+
+.loader {
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.fading-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    background-image: url(../img/fading-line.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+}

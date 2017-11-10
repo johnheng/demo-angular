@@ -1,0 +1,5 @@
+<div [style.background-image]="'url( '+ image +' )'" class="user {{position == 'true' ? 'left' : 'right'}}"></div>
+<li class="message {{position == 'true' ? 'left' : 'right'}}">
+    <span><strong>{{comment.gsx$name.$t}}, <small>{{comment.gsx$timestamp.$t | timeAgo}}</small></strong></span>
+    <span>{{comment.gsx$comment.$t}}</span>
+</li>
